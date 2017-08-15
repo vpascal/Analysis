@@ -1,0 +1,18 @@
+<script src="//d3plus.org/js/d3.js"></script>
+<script src="//d3plus.org/js/d3plus.js"></script>
+
+<p>First cd into the directory and then open using HTTP server e.g. python -m  SimpleHTTPServer</p>
+<div id="viz"></div>
+
+<script>
+
+  var visualization = d3plus.viz()
+    .container("#viz")
+    .data("export.csv")
+    .type("bar")
+    .id("explanation")
+    .x("explanation")
+    .y("type")
+     .title("Transaction Volume\n 2016")
+    .draw()
+</script>
